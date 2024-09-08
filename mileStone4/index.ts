@@ -4,7 +4,7 @@ const aboutNavigator = document.querySelector('.about-navigator') as HTMLElement
 const skillsNavigator = document.querySelector('.skills-navigator') as HTMLElement;
 const experienceNavigator = document.querySelector('.workExperience-navigator') as HTMLElement;
 const educationNavigator = document.querySelector(".education-navigator") as HTMLElement
-const formNavigator = document.querySelector(".form-navigator") as HTMLElement
+
 
 const homeHeadings = document.querySelector('.home-headings') as HTMLElement;
 const aboutSection = document.querySelector('.about') as HTMLElement;
@@ -35,6 +35,11 @@ let email = document.querySelector("#email") as HTMLInputElement
 let phoneNum = document.querySelector("#phoneNum") as HTMLInputElement
 
 
+let profile_name = document.querySelector(".profile-name") as HTMLElement
+profile_name.textContent = name.value
+
+
+
 // required main elements and their dynamic value.
 let homeHeading1 = document.querySelector(".home-headings h1") as HTMLHeadingElement;
 
@@ -42,17 +47,19 @@ let homeHeading1 = document.querySelector(".home-headings h1") as HTMLHeadingEle
 if (homeHeading1) {
     if(name){
         homeHeading1.textContent = `Hello, I'm ${name.value}`;
-
+        
     }
 }  
 
 let homeHeadingh3 = document.querySelector(".home-headings h3") as HTMLHeadingElement
 
 
-if(homeHeadingh3) {
+if(homeHeadingh3 ) {
     let field = document.querySelector(".field") as HTMLInputElement
+    let profile_designation = document.querySelector(".profile-designation") as HTMLElement
     if(field){
         homeHeadingh3.textContent = `${field.value}`
+        profile_designation.textContent = `${field.value}`
     }
 }
 

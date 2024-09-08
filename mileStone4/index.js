@@ -4,7 +4,6 @@ const aboutNavigator = document.querySelector('.about-navigator');
 const skillsNavigator = document.querySelector('.skills-navigator');
 const experienceNavigator = document.querySelector('.workExperience-navigator');
 const educationNavigator = document.querySelector(".education-navigator");
-const formNavigator = document.querySelector(".form-navigator");
 const homeHeadings = document.querySelector('.home-headings');
 const aboutSection = document.querySelector('.about');
 const skillsSection = document.querySelector('.Coding');
@@ -28,6 +27,8 @@ function handleFormUpdations() {
     let address = document.querySelector("#address");
     let email = document.querySelector("#email");
     let phoneNum = document.querySelector("#phoneNum");
+    let profile_name = document.querySelector(".profile-name");
+    profile_name.textContent = name.value;
     // required main elements and their dynamic value.
     let homeHeading1 = document.querySelector(".home-headings h1");
     if (homeHeading1) {
@@ -38,8 +39,10 @@ function handleFormUpdations() {
     let homeHeadingh3 = document.querySelector(".home-headings h3");
     if (homeHeadingh3) {
         let field = document.querySelector(".field");
+        let profile_designation = document.querySelector(".profile-designation");
         if (field) {
             homeHeadingh3.textContent = `${field.value}`;
+            profile_designation.textContent = `${field.value}`;
         }
     }
     let aboutYouP = document.querySelector(".aboutP");
