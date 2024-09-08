@@ -1,5 +1,5 @@
 "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 // Select all necessary elements
 const homeNavigator = document.querySelector('.home-navigator');
 const aboutNavigator = document.querySelector('.about-navigator');
