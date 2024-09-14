@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       
       const userName = formData.name.toLowerCase().replace(/\s+/g, "");
-      const uniqueUrl = `resume-viewer.html?username=${userName}`;
+      const uniqueUrl = `https://hackathon-milestone5-iota.vercel.app/?username=${userName}`;
       localStorage.setItem(userName, JSON.stringify(formData)); 
 
       
