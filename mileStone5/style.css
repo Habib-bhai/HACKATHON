@@ -1,0 +1,217 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(100deg, #3434f7, #03c1f5);
+    padding: 20px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(20, 228, 214, 0.7);
+    border: 2px solid #01f2de;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #1804b4, #19eef9);
+    background-clip:content-box;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  fieldset {
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #0230d5;
+    border-radius: 12px;
+    background-color: #000000;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #24f4a1;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #06a7f7;
+  }
+  
+  input {
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #03a2f2;
+    border-radius: 8px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    background-color: #fdfdff;
+    color: #000000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #1c05d1;
+    box-shadow: 0 0 8px #255bff;
+    outline: none;
+  }
+  
+  button {
+    padding: 15px;
+    background-color:#12dd9d ;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1f1f1f;
+    transform: scale(1.05);
+  }
+  
+  
+  #resume {
+    margin-top: 30px;
+  }
+  
+  #resume-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #0782c9;
+    color: rgb(6, 161, 138);
+    box-shadow: 0 0 15px rgba(226, 39, 7, 0.6);
+  }
+  
+  #resume-content h3 {
+    margin-top: 0;
+    color: #091dd1;
+  }
+  
+  #resume-content p,
+  #resume-content ul {
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: rgb(0, 255, 251);
+  }
+  
+ 
+  #share-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  #shareable-link {
+    display: block;
+    margin: 15px 0;
+    color: #00a9d3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  #shareable-link:hover {
+    color: #ffdd59;
+    text-decoration: underline;
+  }
+  
+  #copy-link-btn,
+  #download-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #f2f2fe;
+    color: #0216c9;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  #copy-link-btn:hover,
+  #download-btn:hover {
+    background-color: #0bebb7;
+    box-shadow: 0 0 10px #bc03d0;
+    border-color: #db0000;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 30px;
+      max-width: 100%;
+    }
+  
+    h1,
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+  
+    form,
+    fieldset {
+      padding: 20px;
+    }
+  
+    legend {
+      font-size: 1.2rem;
+    }
+  
+    input,
+    button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1,
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  
+    input,
+    button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
