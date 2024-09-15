@@ -302,4 +302,4 @@ else {
 }
 // This will show the  home headings by default on page load
 window.addEventListener('DOMContentLoaded', () => showSection(form, 'flex'));
-export {};
+// export {};
